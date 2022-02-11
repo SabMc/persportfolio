@@ -3,15 +3,18 @@
     --secondary-color: #1b2c1b;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     --gradient: linear-gradient(var(--secondary-color), var(--primary-color));
+    --heading-font-family:'Genos', sans-serif;
+    --default-font-family: 'Source Sans 3', sans-serif;
 }
 
+body{font-family: var(--default-font-family);}
+
 h1,h2,h3,h4,h5 {
-    font-family: 'Genos', sans-serif;
+    font-family: var(--heading-font-family);
     color: white;
     font-weight: 900;
 }
 p,li,a {
-    font-family: 'Source Sans 3', sans-serif;
     color: white;
     font-weight: 400;
     font-size: 18px;
@@ -47,3 +50,5 @@ p,li,a {
     text-decoration: none;
     margin:10px;
 }
+.button:hover{color: var(--primary-color);}
+.button-negativ:hover{color: var(--secondary-color);}
