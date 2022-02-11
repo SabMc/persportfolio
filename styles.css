@@ -1,6 +1,49 @@
+:root{
+    --primary-color: #518551;
+    --secondary-color: #1b2c1b;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    --gradient: linear-gradient(var(--secondary-color), var(--primary-color));
+}
 
+h1,h2,h3,h4,h5 {
+    font-family: 'Genos', sans-serif;
+    color: white;
+    font-weight: 900;
+}
+p,li,a {
+    font-family: 'Source Sans 3', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
 
-h1,h2,h3,h4,h5{font-family: 'Genos', sans-serif;}
-p,li,a{font-family: 'Source Sans 3', sans-serif;}
+.hero{
+    background: var(--gradient);
+    text-align: center;
+    padding: 160px 0px;
+}
 
-h1{color: aqua;}
+.hero p{font-size: 32px;
+
+}
+.hero h1{    
+    font-size: 96px;
+}
+
+.button{
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    margin:10px;
+}
+
+.button-negativ{
+    padding:15px;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    margin:10px;
+}
