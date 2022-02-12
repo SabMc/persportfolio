@@ -1,5 +1,5 @@
 :root{
-    --primary-color: #518551;
+    --primary-color: #436e43;
     --secondary-color: #1b2c1b;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     --gradient: linear-gradient(var(--secondary-color), var(--primary-color));
@@ -18,6 +18,7 @@ p,li,a {
     color: white;
     font-weight: 400;
     font-size: 18px;
+    line-height: 1.5;
 }
 
 .hero{
@@ -39,7 +40,6 @@ p,li,a {
     color: white;
     background-color: var(--secondary-color);
     text-decoration: none;
-    margin:10px;
 }
 
 .button-negativ{
@@ -48,7 +48,28 @@ p,li,a {
     color: white;
     background-color: var(--primary-color);
     text-decoration: none;
-    margin:10px;
 }
 .button:hover{color: var(--primary-color);}
 .button-negativ:hover{color: var(--secondary-color);}
+
+.projects-overview{
+    background: var(--gradient);
+    padding-bottom: 160px;
+}
+.project-container{
+    max-width: 1100px;
+    margin:0 auto;
+}
+.project-container h2{margin: 48px 0px 16px;}
+.project-description{
+    padding:40px 20px;
+}
+
+@media (max-width:992px) {
+    .project-description{
+        padding:0;
+        text-align: center;
+    }
+    .project-container h2{margin:16px 0px;}   
+}
+
