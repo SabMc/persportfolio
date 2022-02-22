@@ -35,7 +35,13 @@ p,li,a {
 .work{
     background: var(--gradient);
     text-align: center;
-    padding: 160px 0px;
+    padding: 160px 0px 60px;
+}
+
+.contact{
+    background: var(--gradient);
+    text-align: center;
+    padding: 160px 0px 60px;
 }
 
 .hero p{font-size: 32px;
@@ -44,7 +50,7 @@ p,li,a {
 .hero h1{    
     font-size: 96px;
 }
-
+.contact h1{font-size: 96px;}
 .button{
     padding: 15px;
     border-radius: 10px;
@@ -104,6 +110,10 @@ color: white;}
 
 .card-background{background: var(--gradient);
 border: none;}
+
+.social{display: flex;
+flex-direction: row;
+justify-content: space-evenly;}
 
 @media (max-width:992px) {
     .project-description{
