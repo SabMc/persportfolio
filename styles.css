@@ -181,6 +181,21 @@ border: none;}
     justify-content: space-evenly;
 }
 
+.cudos{
+    margin-top: 80px;
+    color: white;
+}
+
+.cudos a{
+    color: white;
+    text-decoration: none;
+}
+
+.cudos a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
 @media (max-width:992px) {
     nav li{
         line-height: 20px;
