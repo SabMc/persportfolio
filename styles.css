@@ -3,7 +3,7 @@
     --secondary-color: #1b2c1b;
     --light-color:#EDE6CE;
     --hover-color:#6df99a;
-    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    --trans: transparent;
     --gradient: linear-gradient(var(--secondary-color), var(--primary-color));
     --heading-font-family:'Genos', sans-serif;
     --default-font-family: 'Source Sans 3', sans-serif;
@@ -58,8 +58,63 @@ nav li.active a, nav a:hover{
     border-radius: 50%;
 }
 
+.contact-footer{
+    background-color: var(--secondary-color);
+	background-image:repeating-radial-gradient(
+			circle at -0.3em 0.5em,
+			var(--trans),
+			var(--trans) 0.5em,
+			var(--primary-color) 0.51em,
+			var(--primary-color) 0.55em,
+			var(--trans) 0.56em,
+			var(--trans) 0.8em),
+		repeating-radial-gradient(
+			circle at 1.3em 0.5em,
+			var(--trans),
+			var(--trans) 0.5em,
+			var(--primary-color) 0.51em,
+			var(--primary-color) 0.55em,
+			var(--trans) 0.56em,
+			var(--trans) 0.8em),
+		repeating-radial-gradient(
+			circle at 1.05em 0.5em,
+			var(--trans),
+			var(--trans) 0.4em,
+			var(--primary-color) 0.41em,
+			var(--primary-color) 0.45em,
+			var(--trans) 0.46em,
+			var(--trans) 0.8em),
+		repeating-radial-gradient(
+			circle at 0.05em 0.5em,
+			var(--trans),
+			var(--trans) 0.4em,
+			var(--primary-color) 0.41em,
+			var(--primary-color) 0.45em,
+			var(--trans) 0.46em,
+			var(--trans) 0.8em),
+		repeating-radial-gradient(
+			circle at 0.95em 0.5em,
+			var(--trans),
+			var(--trans) 0.4em,
+			var(--primary-color) 0.41em,
+			var(--primary-color) 0.45em,
+			var(--trans) 0.46em,
+			var(--trans) 0.8em),
+		repeating-radial-gradient(
+			circle at -0.05em 0.5em,
+			var(--trans),
+			var(--trans) 0.4em,
+			var(--primary-color) 0.41em,
+			var(--primary-color) 0.45em,
+			var(--trans) 0.46em,
+			var(--trans) 0.8em);
+	background-size: 1em 1em;
+}
+
 footer{
     margin:60px 0px 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 footer .contact-box{
@@ -88,6 +143,7 @@ footer .social-links a:hover{
     background: var(--gradient);
     text-align: center;
     padding: 100px 0px 160px;
+
 }
 
 .introduction{
@@ -99,13 +155,13 @@ footer .social-links a:hover{
 .work{
     background: var(--gradient);
     text-align: center;
-    padding: 160px 0px 60px;
+    padding: 100px 0px 60px;
 }
 
 .contact{
     background: var(--gradient);
     text-align: center;
-    padding: 160px 0px 60px;
+    padding: 100px 0px 60px;
 }
 
 .contact h3{font-weight: bold;}
@@ -190,6 +246,7 @@ border: none;}
 .cudos{
     margin-top: 80px;
     color: white;
+    text-align: center;
 }
 
 .cudos a{
