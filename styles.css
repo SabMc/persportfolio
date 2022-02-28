@@ -1,6 +1,7 @@
 :root{
     --primary-color: #436e43;
     --secondary-color: #1b2c1b;
+    --light-color:#EDE6CE;
     --hover-color:#6df99a;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     --gradient: linear-gradient(var(--secondary-color), var(--primary-color));
@@ -47,7 +48,8 @@ nav a{
 }
 
 nav li.active a, nav a:hover{
-    color: var(--hover-color);
+    color: white;
+    font-weight: bold;
     transition: all 150ms ease-in-out;
 }
 
@@ -79,7 +81,7 @@ footer .social-links a{
 }
 
 footer .social-links a:hover{
-    color:var(--hover-color);
+    color:var(--light-color);
 }
 
 .hero{
@@ -106,6 +108,8 @@ footer .social-links a:hover{
     padding: 160px 0px 60px;
 }
 
+.contact h3{font-weight: bold;}
+
 .hero p{font-size: 32px;
 
 }
@@ -123,14 +127,16 @@ footer .social-links a:hover{
 }
 
 .button-negativ{
-    padding:15px;
+    padding:12px;
     border-radius: 10px;
-    color: white;
-    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    background-color: var(--light-color);
     text-decoration: none;
 }
-.button:hover{color: var(--hover-color);}
-.button-negativ:hover{color: var(--hover-color);}
+.button:hover{font-weight: bold;
+color: white;}
+.button-negativ:hover{color: var(--secondary-color);
+font-weight: bold;}
 
 .projects-overview{
     background: var(--gradient);
